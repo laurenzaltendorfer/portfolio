@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – <DEIN NAME></title>
+  <meta name="description" content="Portfolio von <DEIN NAME>: Ausgewählte Design-Projekte und Kontakt." />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portfolio – <DEIN NAME>" />
+  <meta property="og:description" content="Ausgewählte Design-Projekte und Kontakt." />
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta property="og:url" content="https://<DEIN_USERNAME>.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="https://<DEIN_USERNAME>.github.io" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#111827" />
+
+  <link rel="preload" href="/styles.css" as="style" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="/">&#11088; <span>Portfolio</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" onclick="toggleMenu()">Menü</button>
+      <ul id="menu" class="menu">
+        <li><a href="#projekte">Projekte</a></li>
+        <li><a href="#about">Über mich</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Hallo, ich bin <span class="accent">&lt;DEIN NAME&gt;</span>.</h1>
+      <p>Ich gestalte digitale Produkte, Marken & interaktive Erlebnisse. Unten findest du eine Auswahl meiner Arbeiten.</p>
+      <a class="btn" href="#projekte">Projekte ansehen</a>
+    </section>
+
+    <section class="projects" id="projekte">
+      <h2>Ausgewählte Projekte</h2>
+      <div class="grid">
+        <!-- Platzhalter-Karten -->
+        <article class="card">
+          <img src="https://picsum.photos/seed/portfolio1/640/420" alt="Projekt Platzhalter">
+          <div class="card-body">
+            <h3>Case Study Titel</h3>
+            <p>Kurzbeschreibung des Projekts. Ersetze dies durch echte Inhalte.</p>
+            <a class="link" href="#" aria-disabled="true">Bald verfügbar</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/portfolio2/640/420" alt="Projekt Platzhalter">
+          <div class="card-body">
+            <h3>Brand Design</h3>
+            <p>Logo, Farben, Typo – ein kompaktes Branding-Kit.</p>
+            <a class="link" href="#" aria-disabled="true">Bald verfügbar</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/portfolio3/640/420" alt="Projekt Platzhalter">
+          <div class="card-body">
+            <h3>UI/UX Redesign</h3>
+            <p>Verbesserte User Flows & frisches Interface.</p>
+            <a class="link" href="#" aria-disabled="true">Bald verfügbar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>Über mich</h2>
+      <p>Kurzer Bio-Absatz. Ersetze diesen Text durch deine Story, Skills (Figma/XD, UI/UX, Branding, Prototyping), Awards, Kunden usw.</p>
+    </section>
+
+    <section class="contact" id="kontakt">
+      <h2>Kontakt</h2>
+      <ul class="contact-list">
+        <li><a href="mailto:hi@deinedomain.com">hi@deinedomain.com</a></li>
+        <li><a href="https://www.linkedin.com/in/<DEIN_USERNAME>/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.github.com/<DEIN_USERNAME>/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://dribbble.com/<DEIN_USERNAME>/" target="_blank" rel="noopener">Dribbble</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> &lt;DEIN NAME&gt;. Alle Rechte vorbehalten.</small>
+  </footer>
+
+  <script src="/script.js" defer></script>
+
+  <!-- Strukturierte Daten -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "<DEIN NAME>",
+    "url": "https://<DEIN_USERNAME>.github.io",
+    "sameAs": [
+      "https://www.linkedin.com/in/<DEIN_USERNAME>/",
+      "https://github.com/<DEIN_USERNAME>/"
+    ],
+    "jobTitle": "Designer:in",
+    "knowsAbout": ["UI/UX", "Branding", "Prototyping", "Interaction Design"]
+  }
+  </script>
+</body>
+</html>
